@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les05</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="shortcut icon" type="image" href="./猫咪.ico">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        /* 头部标签 */
+        header {
+            border-bottom: 1px solid #ddd;
+            background-color: #e3e4e5;
+        }
+        nav , nav a{
+            width: 990px;
+            height: 30px;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #999;
+            line-height: 30px;
+        }
+        nav ul {
+            float: right;
+        }
+        nav ul li,
+        nav div:first-child {
+            float: left;
+        }
+
+        .line {
+            margin: 0 12px;
+        }
+        .fa-angle-down {
+            font-size: 10px;
+            margin: 0 3px;
+        }
+        .red {
+            color: #FF0000;
+        }
+        #down-list01 {
+            width: 320px;
+            height: 200px;
+            display: none;
+            /* background-color: crimson; */
+            border: rgba(82, 81, 81, 0.37) 1px solid;
+            position: absolute;
+            z-index: 2;
+        }
+
+        nav div:first-child:hover #down-list01 {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="javascript:;">贵州</a>
+                <div id="down-list01"></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="javascript:;">你好，请登录</a><span class="line">|</span>
+                </li>
+                <li>
+                    <a href="javascript:;">我的订单</a><span class="line">|</span>
+                </li>
+                <li>
+                    <a href="javascript:;">我的京东<i class="fas fa-angle-down"></i></a><span class="line">|</span>
+                </li>
+                <li>
+                    <a href="javascript:;">京东会员</a><span class="line">|</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><span class="red">企业采购</span><i class="fas fa-angle-down"></i></a><span class="line">|</span>
+                </li>
+                <li>
+                    <span>客户服务<i class="fas fa-angle-down"></i></span><span class="line">|</span>
+                </li>
+                <li>
+                    <span>网站导航<i class="fas fa-angle-down"></i></span><span class="line">|</span>
+                </li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度新闻练习</title>
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <style>
+        .main_part {
+            width: 900px;
+            margin: 0px auto;
+        }
+
+        /* 设置h1字体大小 */
+        .main_part h1 {
+            margin-top: 41px;
+            margin-bottom: 21px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* 设置央视新闻图片 */
+        .main_part a img {
+            width: 47px;
+            border-radius: 50%;
+        }
+
+        /* 设置央视网新闻字体 */
+        .yangshi span {
+            color: black;
+            font-size: 16px;
+            position: relative;
+            top: -28px;
+        }
+
+        /* 设置超链接 */
+        a {
+            text-decoration: none;
+        }
+
+        /* 设置time_top */
+        #time_top {
+            font-size: 12px;
+            color: #999;
+            position: relative;
+            left: 49px;
+            top: -30px;
+        }
+
+        /* 设置主体部分(左) */
+        .left_part {
+            width: 600px;
+            float: left;
+            height: 200px;
+            margin: 40px 50px 30px 0px;
+        }
+
+        /* 设置主体部分（右） */
+        .right_part {
+            width: 200px;
+            padding_left: 100px;
+            border-left: black solid 1px;
+            float: left;
+            height: 1000px;
+            display: table;
+        }
+
+        /* 设置主体字体 */
+        .right_part p {
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_part">
+        <h1>文化和旅游部：五一假期全面实施门票预约制度</h1>
+        <div class="yangshi">
+            <a href="javascript:;">
+                <img src="./sourse/央视网新闻log.jpg" alt="图片加载失败">
+            </a>
+            <a href="javascript:;">
+                <span>央视网新闻</span>
+            </a> <br/>
+            <span id="time_top">发布时间: 04-28 16:16 央视国际网络有限公司</span>
+        </div>
+
+        <!-- 创建主体部分((左) -->
+        <div class="left_part">
+            <p>五一假期临近，文化和旅游部要求各地景区景点五一期间要严格落实“限量、预约、错峰”的要求，根据自身承载能力和当地疫情防控指挥机构要求，合理确定、严格执行限量要求，控制好接待游客数量，并全面实施门票预约制度。</p>
+            <br/><br/>
+            <p>文化和旅游部今天（4月28日）部署了五一假期旅游出行疫情防控工作，要求各地景区景点要严格遵守卫生防疫相关规定，严格落实进景区景点前扫码登记、测体温等要求；对购票场所、景区入口、核心景点、餐饮服务点、交通接驳点、狭窄路段等区域，要根据瞬时承载量制定切实可行、灵活机动的流量管控措施，严防人员瞬时过度集中；采取提前开园时间、检查点前置、多开放入口等方式，有效缓解景区入口压力；优化设置游览线路，避免线路规划不合理导致游客扎堆拥挤等现象；加强景区外部游客疏导、分流，避免游客在景区入口区域形成聚集。做好游客在乘车、入住、购票、游览、就餐等环节的疫情防控提醒，督促游客保持安全距离，做好个人防护。（总台央视记者 吴薇）</p>
+            <br/><br/>
+            <p>（来源：央视新闻）</p>
+        </div>
+
+        <!-- 创建主体部分（右） -->
+        <div class="right_part1">
+            <div class="right_part">
+                <h3>作者最新文章</h2>
+                <br>
+                <a href="">
+                    <p>中消协发布一季度消费投诉分析 不良营销又出新招</p>
+                </a>
+                <br>
+                <a href="">
+                    <p>俄罗斯将通过评估与各国关系发展可能性制定“不友好国家”名单</p>
+                </a>
+                <br>
+                <a href="">
+                    <p>文化和旅游部：五一假期全面实施门票预约制度</p>
+                </a>
+                <br>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

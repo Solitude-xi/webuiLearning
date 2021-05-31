@@ -1,0 +1,33 @@
+.first_top{
+    height: 36px;
+    background-color: #6C6C6C;
+    color: white;
+    padding: 0px 32px 0px;
+}
+.fir_top_top a{
+    color: #B8B8B8;
+    font-size: 12px;
+    float: left;
+    height: 100%;
+    margin-top: 11px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.fir_top_top a:hover{
+    color: rgb(255, 103, 2);
+}
+.first_top span{
+    font-color: white;
+}
+.fir_last{
+    float: left;
+    margin-top: 12px;
+    font-size: 10px;
+}
+.c2{
+    width: 450px;
+}
+.c2 img{
+    width: 36px;
+    margin:  1.5px;
+}

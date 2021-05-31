@@ -1,0 +1,42 @@
+
+/* 地图 */
+#map {
+    width: 500px;
+    height: 500px;
+    /* background-color: #bfa; */
+    background: url(./sourse/2.jpg);
+    margin: 0px auto;
+    position: relative;
+}
+
+/* 蛇 */
+#snake {
+    width: 20px;
+    height: 20px;
+    background-color: darkorange;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+}
+
+/* 开始游戏按钮 */
+#btn {
+    margin-top: 10px;
+}
+
+/* 蛇的食物 */
+#food {
+    width: 20px;
+    height: 20px;
+    background-color: violet;
+    position: absolute;
+    /* left: 200px; */
+    /* z-index: 1; */
+}
+
+/* 记录游戏得分 */
+#grade{
+    padding: 5px;
+    /* margin: 0px auto; */
+}

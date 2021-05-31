@@ -1,0 +1,99 @@
+/* 顶部 */
+.top{
+    height: 58px;
+    /* background-color: #000; */
+    border-bottom: rgb(107, 105, 105) 1px solid;
+    /* box-shadow: rgb(107, 105, 105) ; */
+    margin-bottom: 20px;
+}
+
+/* 设置顶部的显示区域长度为1200px */
+.topPart{
+    height: 58px;
+    width: 1200px;
+    /* background-color: olive; */
+    margin: 0px auto;
+}
+
+/* 今日头条logo */
+.topPart img{
+    width: 108px;
+}
+
+/* 今日头条logo垂直居中 */
+.topPart a{
+    line-height: 58px;
+}
+
+/* 首页&正文 */
+.topPart a:nth-child(2){
+    color: rgb(0, 0, 0);
+}
+.topPart a:nth-child(2):hover{
+    color: #406599;
+}
+
+
+
+/* 设置主体部分大小和水平居中 */
+.main{
+    width: 1200px;
+    height: 200px;
+    /* background-color: orange; */
+    margin: 0px auto;
+}
+
+/* 主体部分左边部分 */
+.mainLeft{
+    width: 110px;
+    height: 300px;
+    /* background-color: orangered; */
+    float: left;
+}
+.mainLeft img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* 主体部分中间部分 */
+.mainMiddle{
+    width: 660px;
+    height: 500px;
+    /* background-color: orchid; */
+    margin: 0px 45px;
+    float: left;
+}
+.mainMiddle h1{
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 44px;
+}
+.mainMiddle p{
+    margin: 20px 0px;
+    font-size: 18px;
+}
+.mainMiddle p span{
+    font-size: 13px;
+    color: #777;
+    
+}
+.mainMiddle p span:first-child{
+    border: rgb(107, 105, 105) 1px solid;
+    padding: 2px;
+    margin-right: 5px;
+}
+.mainMiddle img{
+    width: 660px;
+    /* margin-top: 20px; */
+}
+
+
+
+
+/* 主体部分右边部分 */
+.mainRight{
+    width: 340px;
+    height: 500px;
+    background-color: palegreen;
+    float: right;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这是一个假的京东</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #outer {
+            margin: 50px auto;
+            width: 320px;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #outer .inner {
+            width: 20%;
+            padding: 4px 0;
+            text-align: center;
+        }
+
+        .inner a {
+            color: #999;
+            font-size: 12px;
+            padding: 3px;
+            /* margin: 2px 0; */
+            /* background-color: cadetblue; */
+        }
+
+        .change a {
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="inner area">贵州</div>
+        <div class="inner" @click="changeAr" v-for="item in city" :class="changeArea"><a href="javascript:;">{{ item
+                }}</a></div>
+    </div>
+
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var outer = new Vue({
+            el: "#outer",
+            data: {
+                city: ["北京", "上海", "天津", "重庆", "河北", "山西", "河南", "辽宁", "吉林", "黑龙江", "内蒙古", "江苏", "山东", "安徽", "浙江", "福建", "湖北", "湖南", "广东", "广西", "江西", "四川", "海南", "贵州", "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆", "港澳", "台湾", "钓鱼岛", "海外"],
+                changeArea: ""
+            },
+            methods: {
+                changeAr: function () {
+                    if (this.changeArea == "") {
+                        this.changeArea = "change";
+                    } else {
+                        this.changeArea = "";
+                    }
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

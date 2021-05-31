@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les07</title>
+    <link rel="shortcut icon" type="image" href="./OIP.ico">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 2000px;
+        }
+
+        .nav-bg {
+            height: 50px;
+            background-color: #999;
+        }
+        nav {
+            width: 990px;
+            height: 100%;
+            background-color: #999;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            line-height: 50px;
+
+        }
+        nav div {
+            width: 80px;
+            justify-content: center;
+            display: flex;
+        }
+        nav div:hover {
+            background-color: burlywood;
+            cursor: pointer;
+        }
+
+        #info {
+            height: 50px;
+            width: 45px;
+            background-color: burlywood;
+            position: fixed;
+            right: 0;
+            top: 45%;
+            display: flex;
+            justify-content: center;
+            border-radius: 13px;
+        }
+        #info a {
+            text-decoration: none;
+            color: #666;
+            line-height: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-bg">
+        <nav id="nav">
+            <div v-for = "(item,index) in arr" @click = "doIt"><a href="javascript:;">{{ item }}</a></div>
+        </nav>
+    </div>
+    <div id="info">
+        <a href="#">回到<br>顶部</a>
+    </div>
+
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var nav = new Vue({
+            el: "#nav",
+            data:{
+                arr:["首页","国内","国际","军事","财经","娱乐","体育","互联网","科技","游戏","女人","汽车","房产","狗蛋","邹芸"]
+            },
+            methods:{
+                doIt:function(){
+                    alert("点击跳转！");
+                }
+            }
+        })
+    </script>
+</body>
+</html>

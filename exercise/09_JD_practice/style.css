@@ -1,0 +1,685 @@
+body {
+    overflow: auto;
+    /* height: 1500px; */
+    background-color: #f4f4f4;
+}
+
+/* 顶部导航条 */
+
+/* 定位处颜色变化 */
+.areaRed {
+    background-color: red;
+    color: #fff;
+}
+
+.downList01 .areaRed:hover {
+    background-color: red;
+    color: #fff;
+}
+
+header {
+    /* overflow: auto ; */
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+
+nav {
+    /* 所有的宽度限定 */
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header nav,
+header nav a {
+    width: 990px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+}
+
+
+.leftPart {
+    float: left;
+    line-height: 30px;
+    padding: 0 5px;
+    border-top: #e3e4e5 1px solid;
+    border-left: #e3e4e5 1px solid;
+    border-right: #e3e4e5 1px solid;
+    z-index: 9;
+}
+
+.rightPart {
+    float: right;
+}
+
+.rightPart li {
+    float: left;
+    line-height: 30px;
+    position: relative;
+}
+
+.rightPart .nopos {
+    position: static;
+}
+
+.rightPart li a {
+    line-height: 30px;
+    height: 30px;
+}
+
+.fa-angle-down {
+    margin-left: 1px;
+}
+
+.rightPart .line {
+    margin: 0 8px;
+    font-size: 8px;
+    line-height: 30px;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.fly {
+    display: inline-block;
+    height: 30px;
+    padding: 0 5px;
+    border-top: #e3e4e5 1px solid;
+    border-left: #e3e4e5 1px solid;
+    border-right: #e3e4e5 1px solid;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+/* 设置下拉菜单 */
+/* 下拉块的统一格式 */
+.list {
+    border: #74747442 1px solid;
+    border-top: none;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2 2px #74747442;
+    display: none;
+    z-index: 99;
+}
+
+/* 定位下拉 */
+.downList01 {
+    width: 320px;
+}
+
+.leftPart:hover {
+    background-color: #fff;
+    border-top: #74747442 1px solid;
+    border-left: #74747442 1px solid;
+    border-right: #74747442 1px solid;
+    box-shadow: 0 2 2px #74747442;
+}
+
+.leftPart:hover .downList01 {
+    display: block;
+}
+
+/* 我的京东下拉 */
+.downList02 {
+    width: 280px;
+}
+
+.rightPart li:nth-child(3):hover .downList02 {
+    display: block;
+}
+
+.rightPart li:nth-child(3):hover .fly {
+    background-color: #fff;
+    border-top: #74747442 1px solid;
+    border-left: #74747442 1px solid;
+    border-right: #74747442 1px solid;
+    box-shadow: 0 2 2px #74747442;
+}
+
+/* 企业采购下拉 */
+.downList03 {
+    width: 150px;
+}
+
+.rightPart li:nth-child(5):hover .downList03 {
+    display: block;
+}
+
+.rightPart li:nth-child(5):hover .fly {
+    background-color: #fff;
+    border-top: #74747442 1px solid;
+    border-left: #74747442 1px solid;
+    border-right: #74747442 1px solid;
+    box-shadow: 0 2 2px #74747442;
+}
+
+/* 客户服务下拉 */
+.downList04 {
+    width: 170px;
+}
+
+.rightPart li:nth-child(6):hover .downList04 {
+    display: block;
+}
+
+.rightPart li:nth-child(6):hover .fly {
+    background-color: #fff;
+    border-top: #74747442 1px solid;
+    border-left: #74747442 1px solid;
+    border-right: #74747442 1px solid;
+    box-shadow: 0 2 2px #74747442;
+}
+
+/* 网站导航下拉 */
+.downList05 {
+    width: 990px;
+    top: 31px;
+}
+
+.rightPart li:nth-child(7):hover .downList05 {
+    display: block;
+}
+
+.rightPart li:nth-child(7):hover .fly {
+    background-color: #fff;
+    border-top: #74747442 1px solid;
+    border-left: #74747442 1px solid;
+    border-right: #74747442 1px solid;
+    box-shadow: 0 2 2px #74747442;
+}
+
+/* 下拉栏里面的内容 */
+/* 定位下拉栏 */
+.downList01 table {
+    width: 100%;
+}
+
+.downList01 table td {
+    width: 20%;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.downList01 table a {
+    padding: 5px;
+}
+
+.downList01 table a:hover {
+    background-color: #ececece0;
+}
+
+/* 我的京东下拉栏 */
+.downList02 table {
+    width: 100%;
+}
+
+.downList02 table td {
+    width: 50%;
+    padding-left: 12px;
+}
+
+.downList02 {
+    padding: 8px 0;
+}
+
+.downList02 hr {
+    background-color: #f1efef0a;
+    background-size: 1px;
+}
+
+/* 企业采购下拉栏 */
+.downList03 table {
+    width: 100%;
+}
+
+.downList03 table tr td:first-child {
+    width: 45%;
+    padding-left: 10px;
+}
+
+/* 客服服务 */
+.downList04 table {
+    width: 100%;
+}
+
+.downList04 table tr {
+    width: 50%;
+}
+
+.downList04 table td {
+    padding-left: 12px;
+}
+
+.downList04 table tr:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #1f1e1ee1;
+}
+
+/* 网站导航 */
+.downList05 table {
+    width: 100%;
+}
+
+.downList05 table tr td:nth-child(4),
+.downList05 table tr td:nth-child(6),
+.downList05 table tr td:nth-child(8) {
+    border-left: #99999936 1px solid;
+}
+
+.downList05 table tr td {
+    padding-left: 16px;
+}
+
+.downList05 table tr:first-child {
+    font-weight: bold;
+    color: #1f1e1ee1;
+}
+
+/* 导航条下的搜索框 */
+.box1 {
+    height: 141px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.box1 nav {
+    height: 100%;
+}
+
+.imgBox {
+    width: 190px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 141px;
+}
+
+.box1 img {
+    height: 65%;
+}
+
+.search {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.search .searchBox {
+    float: left;
+    padding-top: 27px;
+    margin-left: 220px;
+    width: 490px;
+}
+
+.search .searchBox i {
+    font-size: 15px;
+    color: #fff;
+}
+
+.search input {
+    width: 414px;
+    height: 30px;
+    border: #ff251b 2px solid;
+    padding-left: 12px;
+}
+
+.search .searchBox button {
+
+    width: 58px;
+    height: 34px;
+    background-color: #ff251b;
+}
+
+.myCartBox {
+    width: 132px;
+    padding-top: 26px;
+    float: left;
+
+}
+
+.myCart {
+    border: #c4c4c460 1px solid;
+    margin-left: 15px;
+    padding: 9px 16px;
+}
+
+.myCart i {
+    font-size: 16px;
+    color: #ff251b;
+}
+
+.myCart a {
+    font-size: 12px;
+    line-height: 12px;
+    color: #ff251b;
+}
+
+/* 搜索框下的热词 */
+.hotWord {
+    width: 450px;
+    height: 20px;
+    position: absolute;
+    top: 65px;
+    left: 220px;
+}
+
+.hotWord ul li {
+    float: left;
+    padding-right: 12px;
+    line-height: 20px;
+}
+
+.hotWord ul li a {
+    font-size: 12px;
+    color: #999;
+}
+
+.hotWord ul li a:hover {
+    color: #ff0000;
+}
+
+/* 搜索框下的项目 */
+.hotItem {
+    width: 750px;
+    height: 40px;
+    position: absolute;
+    top: 81px;
+    left: 210px;
+    padding-top: 20px;
+}
+
+.hotItem ul li {
+    float: left;
+    margin: 11px;
+}
+
+.hotItem ul li a {
+    font-size: 15px;
+    color: #333;
+}
+
+.hotItem ul li:nth-child(1) a,
+.hotItem ul li:nth-child(2) a {
+    color: #e1251b;
+    font-weight: bold;
+}
+
+.hotItem ul li a:hover {
+    color: #e1251b;
+}
+
+/* 商品主体部分 */
+.box2 {
+    margin-top: 10px;
+}
+
+.leftNav {
+    width: 190px;
+    /* height: 500px; */
+    background-color: #fff;
+    float: left;
+    margin-right: 10px;
+    padding: 10px 0;
+}
+
+.leftNav li {
+    height: 25px;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.leftNav li a {
+    color: #333;
+}
+
+.leftNav li a:hover {
+    color: #e1251b;
+}
+
+.leftNav li:hover {
+    background-color: #ddd8d8;
+}
+
+.leftNav li span {
+    padding: 2px;
+    font-size: 12px;
+}
+
+.middleImg {
+    width: 590px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.rightInfor {
+    width: 190px;
+    height: 470px;
+    background-color: #fff;
+    float: left;
+}
+
+/* 中间的轮播图部分 */
+.middleImg .fas {
+    font-size: 20px;
+    color: #ffffffcc;
+}
+
+.middleImg .last,
+.middleImg .next {
+    width: 25px;
+    height: 33px;
+    background-color: #00000026;
+    padding-top: 3px;
+    line-height: 35px;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    z-index: 99;
+}
+
+.middleImg .next {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+.middleImg .last {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.middleImg img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.changeImg {
+    /* width: 113px; */
+    height: 15px;
+    /* background-color: darkgreen; */
+    position: relative;
+    top: -35px;
+    left: 30px;
+}
+
+.changeImg li {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    padding: 3px;
+    float: left;
+}
+
+.changeImg li:hover {
+    background-color: #ffffff66;
+}
+
+.changeImg li:hover div {
+    background-color: #ffffff;
+}
+
+.changeImg div {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #ffffff66;
+    margin-right: 4px;
+}
+
+.changeImg .changeStyle {
+    background-color: #ffffff66;
+}
+
+.changeImg .changeStyle div {
+    background-color: #ffffff;
+}
+
+/* 设置右边个人信息栏 */
+.userInfor {
+    padding: 18px;
+}
+
+.userInfor img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.low1 {
+    margin-top: 2px;
+    padding: 0 5px;
+    float: right;
+    line-height: 18px;
+}
+
+.low1 a:first-child {
+    font-size: 12px;
+    color: #666;
+}
+
+
+.low1 a:nth-child(3),
+.low1 span:nth-child(4),
+.low1 a:nth-child(5) {
+    font-size: 12px;
+    color: #333;
+}
+
+.low1 a:hover {
+    color: #c81623;
+}
+
+.low2 {
+    text-align: center;
+    padding: 0 4px;
+    height: 25px;
+}
+
+.low2 a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    text-align: center;
+    border-radius: 13px;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.low2 :first-child {
+    background-color: #e1251b;
+    color: #fff;
+}
+
+.low2 :last-child {
+    background-color: #363634;
+    color: #e5d790;
+}
+
+.low3 {
+    height: 1px;
+    width: 100px;
+    margin: 8px auto 0;
+    border-bottom: 1px solid #8685853b;
+}
+
+.low4 {
+    margin: 12px;
+    margin-bottom: 8px;
+}
+
+.low4 ul li:first-child a {
+    float: right;
+    display: block;
+}
+
+.low4 li {
+    vertical-align: middle;
+    max-width: 160px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.low4 li span,
+.low4 li a {
+    /* line-height: 16px; */
+    font-size: 12px;
+}
+
+.low4 li span {
+    color: #e1251b;
+    padding: 3px;
+    background-color: #e1251b14;
+    vertical-align: middle;
+}
+
+.low4 li a {
+    line-height: 19px;
+    color: #666;
+}
+
+.low4 li a:hover {
+    color: #e1251b;
+}
+
+.rightInfor .low4 li:first-child span {
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.low5 table {
+    width: 100%;
+    text-align: center;
+    height: 190px;
+}
+
+.low5 a img {
+    width: 28px;
+}
+
+.low5 a {
+    font-size: 12px;
+    color: #333;
+}
+
+.rightInfor .second {
+    margin-bottom: 8px;
+}
