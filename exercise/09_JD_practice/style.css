@@ -2,6 +2,7 @@ body {
     overflow: auto;
     /* height: 1500px; */
     background-color: #f4f4f4;
+    height: 2000px;
 }
 
 /* 顶部导航条 */
@@ -421,7 +422,10 @@ nav a:hover {
 
 /* 商品主体部分 */
 .box2 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    width: 990px;
+    height: 470px;
+    margin: 10px auto;
 }
 
 .leftNav {
@@ -682,4 +686,61 @@ nav a:hover {
 
 .rightInfor .second {
     margin-bottom: 8px;
+}
+
+/* 
+    网页底部
+*/
+.w {
+    /* padding-top: 120px; */
+    width: 990px;
+    margin: 0 auto;
+}
+footer {
+    /* display: flex; */
+    flex-direction: column;
+}
+.footerBox2 {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.377);
+    border-top: 1px solid rgba(148, 148, 148, 0.377);
+}
+.footerBox2 table {
+    width: 100%;
+}
+.footerBox2 table tr:first-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footerBox2 table td {
+    vertical-align: middle;
+    padding: 5px;
+    width: 15%;
+}
+.footerBox2 table td a{
+    /* text-decoration: none; */
+    color: #666;
+}
+.footerBox2 table td a:hover {
+    color: rgb(244, 155, 96);
+}
+.footerBox2 p {
+    line-height: 20px;
+}
+
+.footerBox3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerBox3 a {
+    color: #666;
+}
+.footerBox3 a:hover {
+    color: rgb(244, 155, 96);
+}
+.footerBox3 span {
+    color: rgba(163, 163, 163, 0.459);
 }
