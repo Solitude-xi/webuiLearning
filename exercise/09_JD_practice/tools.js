@@ -1,4 +1,4 @@
-// 没有用swper，手写轮播图
+// 没有用swiper，手写轮播图
 
 // 定位点击更新
 var posArea = document.querySelector('header nav .leftPart .area span'); // 获取定位显示

@@ -696,12 +696,21 @@ nav a:hover {
     width: 990px;
     margin: 0 auto;
 }
+
+.footerBox1 {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+}
 footer {
     /* display: flex; */
     flex-direction: column;
 }
 .footerBox2 {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px 0;
     border-bottom: 1px solid rgba(148, 148, 148, 0.377);
     border-top: 1px solid rgba(148, 148, 148, 0.377);
