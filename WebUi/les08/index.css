@@ -1,0 +1,38 @@
+body {
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC", Verdana, Arial, '微软雅黑','宋体';
+    margin: 0;
+    padding: 0;
+}
+
+.w{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+header .w {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #fdfbf8;
+}
+
+nav .w {
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    background-color: #E8E7E3;
+}
+
+nav .w a {
+    text-decoration: none;
+    color: #949493;
+    font-size: 14px;
+    /* background-color: aquamarine; */
+    /* padding: 15px 50px; */
+}
+
+article .w {
+    justify-content: space-between;
+}
