@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+	<style>
+        .swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+    </style>
+		
+</head>
+<body>
+
+        <div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/606eff95f2faf8bc434ad3f022406c1c.jpg?thumb=1&w=1226&h=460&f=webp&q=90">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7f2e0acc18c3d9b6a9c1ab9e8281fbd6.jpg?thumb=1&w=1226&h=460&f=webp&q=90">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1c3e97686468231f3f78048d7f2b7fdc.jpg?thumb=1&w=1226&h=460&f=webp&q=90">
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+
+    <!-- Swiper JS -->
+	<script src="./swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+</html>
