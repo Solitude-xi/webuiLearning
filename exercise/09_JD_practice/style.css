@@ -753,3 +753,22 @@ footer {
 .footerBox3 span {
     color: rgba(163, 163, 163, 0.459);
 }
+
+/* 右边导航条（会固定的那个） */
+.middleNav ul li {
+    width: 58px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middleNav a {
+    display: block;
+    width: 58px;
+    height: 60px;
+    background-color: bisque;
+    
+}
+.middleNav img {
+    width: 58px;
+}
