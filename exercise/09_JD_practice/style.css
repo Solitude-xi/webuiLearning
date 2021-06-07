@@ -1,8 +1,7 @@
 body {
-    overflow: auto;
-    /* height: 1500px; */
     background-color: #f4f4f4;
-    height: 2000px;
+    height: 3000px;
+
 }
 
 /* 顶部导航条 */
@@ -422,10 +421,17 @@ nav a:hover {
 
 /* 商品主体部分 */
 .box2 {
-    /* margin-top: 10px; */
     width: 990px;
-    height: 470px;
     margin: 10px auto;
+}
+
+.box2::after {
+    content: '';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
 }
 
 .leftNav {
@@ -755,20 +761,72 @@ footer {
 }
 
 /* 右边导航条（会固定的那个） */
-.middleNav ul li {
+
+#middleNav {
+    margin: 0 auto;
     width: 58px;
-    height: 60px;
+    float: right;
+    background-color: brown;
+}
+#middleNav ul {
     display: flex;
+    width: 58px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.middleNav a {
-    display: block;
+#middleNav ul li {
     width: 58px;
     height: 60px;
-    background-color: bisque;
-    
+    background-color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
 }
-.middleNav img {
+
+#middleNav ul li img {
     width: 58px;
+}
+#middleNav ul li a {
+    color: #333;
+}
+#middleNav a span {
+    display: block;
+    padding: 14px;
+    line-height: 16px;
+    font-size: 14px;
+}
+#middleNav li > span {
+    display: block;
+    height: 1px;
+    border-top: 1px #3a3a3a23 solid;
+    width: 40%;
+}
+
+#middleNav li:hover,
+#middleNav li:hover a {
+    background-color: red;
+    color: white;
+}
+
+/* 图片的hover切换 */
+#middleNav li:nth-of-type(2) {
+    background-image: url(https://m.360buyimg.com/babel/jfs/t1/191225/14/3653/82058/60a22426E3c6de321/23855df379936f7c.gif);
+    background-size: 100%;
+}
+
+#middleNav li:nth-of-type(2):hover {
+    background-image: url(https://m.360buyimg.com/babel/jfs/t1/185771/11/4518/11978/60a2242bE18384c57/4e62bc7055cccb9c.jpg);
+}
+.mianBox {
+    position: sticky;
+    top: 10%;
+    width: 1140px;
+    margin: 0 auto;
+    background-color: darkblue;
+}
+.mianBox #middleNav i.fas {
+    display: block;
+    margin-top: 12px;
 }
