@@ -819,14 +819,117 @@ footer {
 #middleNav li:nth-of-type(2):hover {
     background-image: url(https://m.360buyimg.com/babel/jfs/t1/185771/11/4518/11978/60a2242bE18384c57/4e62bc7055cccb9c.jpg);
 }
-.mianBox {
+.mianLine {
     position: sticky;
     top: 10%;
     width: 1140px;
     margin: 0 auto;
     background-color: darkblue;
 }
-.mianBox #middleNav i.fas {
+.mianLine #middleNav i.fas {
     display: block;
     margin-top: 12px;
+}
+
+/* 
+ *   商品的主体部分
+ */
+
+.mainBody {
+    /* padding-bottom: 120px; */
+    width: 990px;
+    margin: 0 auto;
+}
+.mainBody nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainBody nav .m-flex {
+    padding: 16px 0;
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainBody nav h3 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+.mainBody nav .m-flex h4 ,
+.max-v .goods-2{
+    display: inline-block;
+    padding: 20px 20px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.mainBody nav .m-flex > div {
+    /* border: 1px solid #333; */
+    background-color: #fff;
+    width: 24%;
+}
+.mainBody nav .m-flex h4 span {
+    font-size: 12px;
+    font-weight: normal;
+}
+.mainBody .goods,
+.goods-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 20px;
+}
+
+.goods img ,
+.max-v .goods-2 img {
+    width: 75px;
+}
+.max-v {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    /* background-color: blueviolet; */
+    justify-content: space-between;
+}
+.max-v a {
+    width: 100%;
+}
+.max-v a img {
+    width: 100%;
+}
+.goods-2 a img {
+    margin-left: 20px;
+}
+.max-v > div {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.max-v .goods-2 {
+    background-color: #fff;
+
+}
+.max-v .goods-2 a {
+    display: inline-block;
+    /* display: flex; */
+    flex-direction: row;
+    width: 48%;
+    height: 48%;
+    /* padding: 0px; */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+}
+.goods-2 h4 {
+    display: block;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.goods-2 h4 span {
+    font-size: 12px;
+    font-weight: normal;
 }
