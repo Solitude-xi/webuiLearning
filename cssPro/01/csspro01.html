@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssPro01</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .fly {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            transition: 1s;
+        }
+        .fly:hover {
+            border-radius: 50%;
+            background-color: rgb(233, 238, 157);
+        }
+        input[type = radio]:checked ~ .fly{
+            animation-name: move;
+            animation-duration: 2s;
+        }
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="radio">
+    <div class="fly"></div>
+</body>
+</html>
