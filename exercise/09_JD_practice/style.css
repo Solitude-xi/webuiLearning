@@ -711,6 +711,7 @@ nav a:hover {
     font-weight: bold;
     justify-content: space-between;
 }
+
 footer {
     /* display: flex; */
     flex-direction: column;
@@ -831,9 +832,9 @@ footer {
     margin-top: 12px;
 }
 
-/* 
+/*
  *   商品的主体部分
- */
+ */                              
 
 .mainBody {
     /* padding-bottom: 120px; */
@@ -933,3 +934,125 @@ footer {
     font-size: 12px;
     font-weight: normal;
 }
+
+
+/* 
+    为你推荐下面的导航条
+*/
+.max-w {
+    padding-top: 16px;
+    display: flex;
+    width: 990px;
+    flex-direction: column;
+}
+.max-w-nav {
+    margin-bottom: 12px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.max-w-nav > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.max-w-nav > div a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.max-w-nav > div a:hover div {
+    color: red;
+}
+.max-w-nav > div div:first-child {
+    /* padding: 0 13px; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.max-w-nav > div div:last-child {
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+}
+.max-w-nav > div:nth-child(2n + 1) {
+    width: 16%;
+    background-color: #fff;
+    height: 100%;
+}
+.max-w-nav > div:nth-child(2n) {
+    height: 30%;
+    width: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* 
+    为你推荐下面的商品
+*/
+.goods-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: coral; */
+}
+.goods-3 > div {
+    width: 19%;
+    height: 266px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 16px;
+    background-color: #fff;
+
+}
+.goods-3 > div a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+.goods-3 > div a > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goods-3 > div a img {
+    width: 120px;
+}
+.goods-3 > div div:nth-child(1) {
+    margin-bottom: 12px;
+}
+.goods-3 > div div:nth-child(2) {
+    font-size: 12px;
+    line-height: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.goods-3 > div div:nth-child(3) {
+    font-weight: bold;
+    color: red;
+    align-self: flex-start;
+}
+
+/* 
+    记得删除，弄着好玩的
+*/
+#nb {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    /* height: 100%; */
+    padding-top: 100px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+
