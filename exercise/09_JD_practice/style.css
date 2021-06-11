@@ -448,6 +448,112 @@ nav a:hover {
     padding-left: 18px;
     font-size: 14px;
     line-height: 25px;
+
+    /* position: relative; */
+}
+
+.leftNav li > div { 
+    /* 中间轮播图部分随左边导航条的hover改变 */
+    width: 800px;
+    height: 470px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 16px;
+    box-shadow: 0 0 4px #666;
+    /* background-color: red; */
+    position: absolute;
+    /* position: sticky; */
+    left: 190px;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+.leftNav li:hover > div {
+    /* 中间轮播图部分随左边导航条的hover改变 */
+    display: block;
+}
+
+.leftNav li > div div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+    /* hover里面的左边部分的导航条 */
+.leftNav li > div .items {
+    width: 580px;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+    /* hover里面的右边部分的图片 */
+.leftNav li > div .img {
+    width: 168px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content:flex-start; */
+    justify-content:center;
+    align-items: center;
+}
+
+.leftNav li > div .img > div:first-child {
+    /* 图片那里的上面第一个框 */
+    /* width: 100%; */
+    width: 168px;
+    /* height: 144px; */
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.leftNav li > div .img > div:first-child div {
+    width: 49%;
+    margin-bottom: 3px;
+    /* height: 24%; */
+    height: 35px;
+    background-color: #e7e7e7;
+}
+
+.leftNav li > div .img > div:first-child a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.leftNav li > div .img > div:first-child img {
+    /* 设置图片大小 */
+    width: 100%;
+    height:100%;
+}
+
+.leftNav li > div .img > div:nth-child(2),
+.leftNav li > div .img > div:nth-child(3) {
+    /* 下边部分的图片 */
+    margin-bottom: 5px;
+    /* width: 100%; */
+    align-self: flex-start;
+    width: 168px;
+    /* height: 134px; */
+
+    /* background-color: darkblue; */
+}
+.leftNav li > div .img > div:nth-child(2) a,
+.leftNav li > div .img > div:nth-child(3) a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.leftNav li > div .img > div:nth-child(2) img,
+.leftNav li > div .img > div:nth-child(3) img {
+    width: 100%;
 }
 
 .leftNav li a {
@@ -1058,3 +1164,10 @@ footer {
     align-content: center;
 }
 
+/* #backTop {
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    transition-duration: 2s;
+} */
