@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-n">
+<!-- 590 470 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css轮播测试</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        #contains {
+            overflow: hidden;
+            width: 590px;
+            margin-top: 50px;
+            /* margin: 50px auto; */
+            /* display: flex; */
+            border: 5px #bfa solid;
+        }
+        .contain {
+            display: flex;
+            animation-name: move;
+            animation-duration: 13s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        .contain img {
+            margin-right: 10px;
+        }
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(-600px);
+            }
+            40% {
+                transform: translateX(-1200px);
+            }
+            60% {
+                transform: translateX(-1800px);
+            }
+            80% {
+                transform: translateX(-2400px);
+            }
+            100% {
+                transform: translateX(-3000px);
+            }
+        }
+
+        #contains .contain img {
+            width: 590px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contains">
+        <div class="contain">
+            <img src="https://img20.360buyimg.com/babel/s1180x940_jfs/t1/187789/22/6490/125273/60ba10feE74212959/030f25d0a29c5653.jpg.webp" alt="">
+            <img src="https://img14.360buyimg.com/pop/s1180x940_jfs/t1/192371/14/5156/46729/60af5bacE7742287d/a4560e3901c1e884.jpg.webp" alt="">
+            <img src="https://imgcps.jd.com/img-cubic/creative_server_cif/v2/2000366/100016676996/FocusFullshop/CkRqZnMvdDEvMTQ4ODQ2LzQwLzE0ODA4Lzc2NzQwOC81ZmIyMzdkYUVhZjk4NDFmOC80ZmFmNDNlYzFjZTYwNDVhLnBuZxIJMy10eV8wXzU0MAI47ot6QhkKFeiBlOWQiOWIm-aWsOaYvuekuuWZqBAAQhEKDeenkuadgOS7tzI3OTkQAUIQCgznq4vljbPmiqLotK0QAkIHCgPmiqIQBw/cr/s/q.jpg" alt="">
+            <img src="https://imgcps.jd.com/ling4/29013694808/5LyB5Lia6LaF55yB5pyI/5YWo5Zy65LqU5oqY6LW3/p-5bd8253082acdd181d02f9fa/b5b1b3b6/cr/s/q.jpg" alt="">
+            <img src="https://imgcps.jd.com/img-cubic/creative_server_cif/v2/2000366/499053/FocusFullshop/CkNqZnMvdDEvMTM4NTI3LzM5LzEwNzU2LzgxNDg4LzVmODU4YzZhRThiYzUzMzQwLzA1MWVhZDU1YjFlMDQ0MDEuanBnEgo5OTktdHlfMF8xMAE47ot6/cr/s/q.jpg" alt="">
+            <img src="https://img20.360buyimg.com/babel/s1180x940_jfs/t1/187789/22/6490/125273/60ba10feE74212959/030f25d0a29c5653.jpg.webp" alt="">
+        </div>
+        <div class="input">
+            <input type="radio" name="tr" checked>
+            <input type="radio" name="tr">
+            <input type="radio" name="tr">
+            <input type="radio" name="tr">
+            <input type="radio" name="tr">
+        </div>
+    </div>
+</body>
+
+</html>
