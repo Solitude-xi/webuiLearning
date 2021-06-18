@@ -821,6 +821,7 @@ nav a:hover {
 footer {
     /* display: flex; */
     flex-direction: column;
+    background-color: #f4f4f4;
 }
 .footerBox2 {
     margin-top: 20px;
